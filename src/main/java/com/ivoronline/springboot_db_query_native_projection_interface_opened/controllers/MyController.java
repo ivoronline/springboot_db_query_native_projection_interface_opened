@@ -12,7 +12,7 @@ public class MyController {
   @Autowired PersonRepository personRepository;
 
   //================================================================
-  // RETURN SINGLE PROPERTY
+  // RETURN PERSON VIEW
   //================================================================
   @RequestMapping("ReturnPersonView")
   PersonView returnPersonView() {
