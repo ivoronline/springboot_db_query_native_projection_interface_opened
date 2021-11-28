@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class LoadPersons implements CommandLineRunner {
 
+  //PROPERTIES
   @Autowired PersonRepository personRepository;
 
   //=======================================================================================

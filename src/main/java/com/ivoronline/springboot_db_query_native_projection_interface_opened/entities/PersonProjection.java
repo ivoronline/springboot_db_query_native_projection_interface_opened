@@ -2,7 +2,7 @@ package com.ivoronline.springboot_db_query_native_projection_interface_opened.en
 
 import org.springframework.beans.factory.annotation.Value;
 
-public interface PersonView {
+public interface PersonProjection {
   @Value("#{target.name + ' is ' + target.age + ' years old'}")
   String getExpression();
 }
