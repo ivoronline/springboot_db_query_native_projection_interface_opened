@@ -1,8 +1,8 @@
-package com.ivoronline.springboot_db_query_native_projection_interface_opened.entities;
+package com.ivoronline.dto;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public interface PersonProjection {
+public interface PersonDTO {
   @Value("#{target.name + ' is ' + target.age + ' years old'}")
   String getExpression();
 }
