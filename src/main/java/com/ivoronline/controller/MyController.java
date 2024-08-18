@@ -1,6 +1,6 @@
 package com.ivoronline.controller;
 
-import com.ivoronline.dto.PersonDTO;
+import com.ivoronline.dto.IPersonDTO;
 import com.ivoronline.repository.UtilityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +18,8 @@ public class MyController {
   // GET PERSON DTO
   //================================================================
   @RequestMapping("GetPersonDTO")
-  PersonDTO getPersonDTO() {
-    PersonDTO personDTO = utilityRepository.getPersonDTO("Bill");
+  IPersonDTO getPersonDTO() {
+    IPersonDTO personDTO = utilityRepository.getPersonDTO("Bill");
     return personDTO;
   }
   
@@ -27,9 +27,9 @@ public class MyController {
   // GET PERSON DTO LIST
   //================================================================
   @RequestMapping("GetPersonDTOList")
-  List<PersonDTO> getPersonDTOList() {
-    List<PersonDTO> personDTOS = utilityRepository.getPersonDTOList("John");
-    return personDTOS;
+  List<IPersonDTO> getPersonDTOList() {
+    List<IPersonDTO> personDTOList  = utilityRepository.getPersonDTOList("John");
+    return personDTOList ;
   }
 
 }
